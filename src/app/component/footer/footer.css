@@ -1,0 +1,412 @@
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  background: linear-gradient(135deg, #03265c, #081c3d);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  padding-top: 70px;
+}
+
+/* Floating Shapes */
+
+.footer-shapes i {
+  position: absolute;
+  opacity: 0.09;
+  animation: float 6s ease-in-out infinite;
+}
+
+.footer-shapes i:nth-child(1) {
+  top: 10px;
+  left: 8%;
+  font-size: 80px;
+}
+
+.footer-shapes i:nth-child(2) {
+  top: 250px;
+  right: 8%;
+  font-size: 90px;
+}
+
+.footer-shapes i:nth-child(3) {
+  bottom: 180px;
+  left: 45%;
+  font-size: 80px;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Logo */
+
+.footer-logo-area {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 3px;
+  margin-left: -12px;
+}
+
+.footer-logo-area h3 {
+  font-weight: 700;
+  margin: 0;
+  white-space: nowrap; /* Keeps text in one line */
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.footer-logo-area span {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.footer-about {
+  line-height: 1.9;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Headings */
+
+.footer h5 {
+  margin-bottom: 25px;
+  font-weight: 700;
+  position: relative;
+}
+
+.footer h5::after {
+  content: '';
+  width: 45px;
+  height: 3px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
+
+/* Links */
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.75);
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #fff;
+  padding-left: 8px;
+}
+
+/* Contact */
+
+.footer-contact p {
+  margin-bottom: 14px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.footer-contact i {
+  width: 25px;
+}
+
+/* Social */
+
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.footer-social a {
+  width: 42px;
+  height: 42px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
+}
+
+.footer-social a:hover {
+  background: #fff;
+  color: #03265c;
+  transform: translateY(-5px);
+}
+
+/* Motto */
+
+.school-motto {
+  text-align: center;
+  margin-top: 60px;
+  padding: 40px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.school-motto i {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.school-motto h4 {
+  font-weight: 700;
+}
+
+.school-motto p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Copyright */
+
+.footer-bottom {
+  background: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 18px 0;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* =========================
+   LARGE LAPTOPS
+========================= */
+
+@media (min-width: 1400px) {
+  .footer {
+    padding-top: 80px;
+  }
+
+  .footer-logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .footer-about {
+    max-width: 90%;
+  }
+}
+
+/* =========================
+   LAPTOPS
+========================= */
+
+@media (max-width: 1199px) {
+  .footer-logo-area h3 {
+    font-size: 1.3rem;
+  }
+
+  .footer-about {
+    font-size: 14px;
+  }
+}
+
+/* =========================
+   TABLETS
+========================= */
+
+@media (max-width: 991px) {
+  .footer {
+    padding-top: 60px;
+  }
+
+  .footer-logo-area {
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .footer-logo {
+    margin-left: 0;
+  }
+
+  .footer-about {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+
+  .footer h5 {
+    margin-top: 20px;
+  }
+
+  .footer h5::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .footer-links {
+    text-align: center;
+  }
+
+  .footer-contact {
+    text-align: center;
+  }
+
+  .school-motto {
+    margin-top: 40px;
+  }
+
+  .footer-shapes {
+    display: none;
+  }
+}
+
+/* =========================
+   MOBILE DEVICES
+========================= */
+
+@media (max-width: 767px) {
+  .footer {
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  .footer-logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .footer-logo-area h3 {
+    font-size: 1.25rem;
+    white-space: normal;
+  }
+
+  .footer-logo-area span {
+    font-size: 13px;
+  }
+
+  .footer-about {
+    font-size: 14px;
+    line-height: 1.7;
+    padding: 0 10px;
+  }
+
+  .footer-links li {
+    margin-bottom: 10px;
+  }
+
+  .footer-links a {
+    font-size: 14px;
+  }
+
+  .footer-contact p {
+    font-size: 14px;
+  }
+
+  .footer-social {
+    gap: 10px;
+  }
+
+  .footer-social a {
+    width: 40px;
+    height: 40px;
+  }
+
+  .school-motto {
+    padding: 30px 10px;
+  }
+
+  .school-motto h4 {
+    font-size: 20px;
+  }
+
+  .school-motto p {
+    font-size: 14px;
+  }
+
+  .footer-bottom {
+    padding: 12px 10px;
+  }
+
+  .footer-bottom p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+}
+
+/* =========================
+   SMALL MOBILE DEVICES
+========================= */
+
+@media (max-width: 480px) {
+  .footer {
+    padding-top: 40px;
+  }
+
+  .footer-logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .footer-logo-area h3 {
+    font-size: 1.1rem;
+  }
+
+  .footer-logo-area span {
+    font-size: 12px;
+  }
+
+  .footer-about {
+    font-size: 13px;
+  }
+
+  .footer h5 {
+    font-size: 18px;
+  }
+
+  .footer-links a {
+    font-size: 13px;
+  }
+
+  .footer-contact p {
+    font-size: 13px;
+  }
+
+  .school-motto i {
+    font-size: 32px;
+  }
+
+  .school-motto h4 {
+    font-size: 18px;
+  }
+
+  .school-motto p {
+    font-size: 13px;
+  }
+
+  .footer-bottom p {
+    font-size: 12px;
+  }
+}

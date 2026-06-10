@@ -1,0 +1,1284 @@
+/* ==================================
+   KINDERGARTEN HERO
+================================== */
+
+.kindergarten-hero {
+  position: relative;
+
+  min-height: 85vh;
+
+  background: url('/kids/kids.jpg');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+}
+
+/* Overlay */
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    #2e3e5ed0 0%,
+    rgba(3, 39, 92, 0.733) 35%,
+    rgba(3, 38, 92, 0.4) 65%,
+    rgba(3, 38, 92, 0.15) 100%
+  );
+}
+
+/* Container */
+
+.kindergarten-hero .container {
+  position: relative;
+  z-index: 5;
+}
+
+/* Breadcrumb */
+
+.breadcrumb-wrapper {
+  padding-top: 120px;
+}
+
+.breadcrumb {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.breadcrumb-item {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.breadcrumb-item a {
+  color: #ffd54f;
+  text-decoration: none;
+}
+
+.breadcrumb-item.active {
+  color: #fff;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Content */
+
+.hero-content {
+  color: #fff;
+  max-width: 700px;
+}
+
+.hero-badge {
+  display: inline-block;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  padding: 10px 22px;
+
+  border-radius: 50px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  margin-bottom: 25px;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: 800;
+
+  line-height: 1.2;
+
+  margin-bottom: 25px;
+}
+
+.hero-content h1 span {
+  color: #ffd54f;
+}
+
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.9;
+
+  color: rgba(255, 255, 255, 0.92);
+
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+
+  margin-top: 35px;
+}
+
+.hero-btn {
+  text-decoration: none;
+
+  padding: 15px 30px;
+
+  border-radius: 50px;
+
+  font-weight: 700;
+
+  transition: 0.3s ease;
+
+  margin-bottom: 40px;
+}
+
+.hero-btn i {
+  margin-right: 8px;
+}
+
+/* Primary */
+
+.primary-btn {
+  background: #ffd54f;
+  color: #03265c;
+}
+
+.primary-btn:hover {
+  background: #ffca28;
+  color: #03265c;
+
+  transform: translateY(-3px);
+}
+
+/* Secondary */
+
+.secondary-btn {
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  color: white;
+}
+
+.secondary-btn:hover {
+  background: white;
+  color: #03265c;
+}
+
+/* Responsive */
+
+@media (max-width: 991px) {
+  .kindergarten-hero {
+    min-height: auto;
+    padding-bottom: 80px;
+  }
+
+  .breadcrumb-wrapper {
+    padding-top: 100px;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .kindergarten-hero {
+    text-align: center;
+  }
+
+  .breadcrumb-wrapper {
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .breadcrumb-wrapper {
+    padding-top: 90px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-badge {
+    font-size: 12px;
+  }
+}
+
+/* ==================================
+   WELCOME TO KINDERGARTEN
+================================== */
+
+.welcome-kindergarten {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+/* Tag */
+
+.section-tag {
+  display: inline-block;
+
+  background: #03265c;
+  color: #fff;
+
+  padding: 8px 20px;
+
+  border-radius: 30px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  margin-bottom: 20px;
+}
+
+/* Title */
+
+.section-title {
+  color: #03265c;
+
+  font-size: 2.8rem;
+  font-weight: 800;
+
+  line-height: 1.3;
+
+  margin-bottom: 25px;
+}
+
+.section-title span {
+  color: #0b4da1;
+}
+
+/* Content */
+
+.welcome-content p {
+  color: #666;
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
+
+/* Features */
+
+.welcome-features {
+  margin-top: 30px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 15px;
+
+  font-weight: 600;
+  color: #03265c;
+}
+
+.feature-item i {
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+
+  background: #03265c;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 12px;
+}
+
+/* Image */
+
+.welcome-image {
+  position: relative;
+}
+
+.welcome-image img {
+  width: 100%;
+
+  border-radius: 25px;
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+
+  transition: 0.4s ease;
+}
+
+.welcome-image:hover img {
+  transform: scale(1.02);
+}
+
+/* Badge */
+
+.experience-badge {
+  position: absolute;
+
+  right: -20px;
+  bottom: 30px;
+
+  background: linear-gradient(135deg, #03265c, #0b4da1);
+
+  color: #fff;
+
+  padding: 20px 25px;
+
+  border-radius: 20px;
+
+  text-align: center;
+
+  box-shadow: 0 15px 35px rgba(3, 38, 92, 0.25);
+}
+
+.experience-badge h4 {
+  margin: 0;
+
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.experience-badge span {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Responsive */
+
+@media (max-width: 991px) {
+  .welcome-kindergarten {
+    padding: 80px 0;
+  }
+
+  .welcome-content {
+    margin-bottom: 40px;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome-kindergarten {
+    padding: 70px 0;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .experience-badge {
+    position: relative;
+
+    right: auto;
+    bottom: auto;
+
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .section-tag {
+    font-size: 12px;
+  }
+
+  .feature-item {
+    font-size: 14px;
+  }
+}
+
+/* ==================================
+   KINDERGARTEN PHILOSOPHY
+================================== */
+
+.kindergarten-philosophy {
+  padding: 100px 0;
+  background: #f8fafc;
+}
+
+/* Heading */
+
+.section-tag {
+  display: inline-block;
+  background: #03265c;
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.section-title {
+  color: #03265c;
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.section-title span {
+  color: #0b4da1;
+}
+
+.section-description {
+  color: #666;
+  line-height: 1.9;
+}
+
+/* Philosophy Boxes */
+
+.philosophy-box {
+  background: #fff;
+  padding: 35px 30px;
+  border-radius: 25px;
+  height: 100%;
+
+  transition: all 0.4s ease;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.philosophy-box:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.philosophy-icon {
+  width: 75px;
+  height: 75px;
+
+  background: linear-gradient(135deg, #03265c, #0b4da1);
+
+  color: #fff;
+
+  border-radius: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 25px;
+}
+
+.philosophy-icon i {
+  font-size: 30px;
+}
+
+.philosophy-box h3 {
+  color: #03265c;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.philosophy-box p {
+  color: #666;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Statement */
+
+.philosophy-statement {
+  margin-top: 70px;
+
+  background: linear-gradient(135deg, #03265c, #0b4da1);
+
+  padding: 60px;
+
+  border-radius: 30px;
+
+  text-align: center;
+}
+
+.philosophy-statement h3 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.philosophy-statement p {
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.9;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Responsive */
+
+@media (max-width: 991px) {
+  .kindergarten-philosophy {
+    padding: 80px 0;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .kindergarten-philosophy {
+    padding: 70px 0;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .philosophy-box {
+    padding: 30px 25px;
+  }
+
+  .philosophy-statement {
+    padding: 40px 25px;
+  }
+
+  .philosophy-statement h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .philosophy-box h3 {
+    font-size: 20px;
+  }
+
+  .philosophy-icon {
+    width: 65px;
+    height: 65px;
+  }
+
+  .philosophy-icon i {
+    font-size: 24px;
+  }
+}
+
+/* ==================================
+   KEY LEARNING AREAS
+================================== */
+
+.learning-areas-section {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+/* Heading */
+
+.section-tag {
+  display: inline-block;
+  background: #03265c;
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.section-title {
+  color: #03265c;
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.section-title span {
+  color: #0b4da1;
+}
+
+.section-description {
+  color: #666;
+  line-height: 1.9;
+}
+
+/* Learning Box */
+
+.learning-box {
+  background: #f8fafc;
+
+  padding: 35px 30px;
+
+  border-radius: 25px;
+
+  height: 100%;
+
+  transition: all 0.4s ease;
+
+  border-top: 4px solid #03265c;
+}
+
+.learning-box:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+
+  background: #ffffff;
+}
+
+/* Icon */
+
+.learning-icon {
+  width: 75px;
+  height: 75px;
+
+  background: linear-gradient(135deg, #03265c, #0b4da1);
+
+  border-radius: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 25px;
+}
+
+.learning-icon i {
+  color: #fff;
+  font-size: 30px;
+}
+
+/* Content */
+
+.learning-box h3 {
+  color: #03265c;
+  font-size: 22px;
+  font-weight: 700;
+
+  margin-bottom: 15px;
+}
+
+.learning-box p {
+  color: #666;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Footer */
+
+.learning-footer {
+  margin-top: 70px;
+
+  text-align: center;
+
+  padding: 50px;
+
+  background: linear-gradient(135deg, #03265c, #0b4da1);
+
+  border-radius: 30px;
+}
+
+.learning-footer h3 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+
+  margin-bottom: 20px;
+}
+
+.learning-footer p {
+  color: rgba(255, 255, 255, 0.9);
+
+  max-width: 850px;
+
+  margin: auto;
+
+  line-height: 1.9;
+}
+
+/* Responsive */
+
+@media (max-width: 991px) {
+  .learning-areas-section {
+    padding: 80px 0;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .learning-areas-section {
+    padding: 70px 0;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .learning-box {
+    padding: 30px 25px;
+  }
+
+  .learning-footer {
+    padding: 40px 25px;
+  }
+
+  .learning-footer h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .learning-box h3 {
+    font-size: 20px;
+  }
+
+  .learning-icon {
+    width: 65px;
+    height: 65px;
+  }
+
+  .learning-icon i {
+    font-size: 24px;
+  }
+}
+
+/* ==================================
+   INTERACTIVE LEARNING
+================================== */
+
+.interactive-learning-section {
+  padding: 100px 0;
+  background: #f8fafc;
+}
+
+/* Heading */
+
+.section-tag {
+  display: inline-block;
+  background: #03265c;
+  color: #fff;
+
+  padding: 8px 22px;
+  border-radius: 30px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  margin-bottom: 15px;
+}
+
+.section-title {
+  color: #03265c;
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1.3;
+
+  margin-bottom: 20px;
+}
+
+.section-title span {
+  color: #0b4da1;
+}
+
+.section-description {
+  color: #666;
+  line-height: 1.9;
+  margin-bottom: 20px;
+}
+
+.interactive-content p {
+  color: #666;
+  line-height: 1.9;
+}
+
+/* Features */
+
+.interactive-features {
+  margin-top: 35px;
+}
+
+.feature-item {
+  display: flex;
+  gap: 18px;
+
+  margin-bottom: 25px;
+
+  padding: 20px;
+
+  background: #fff;
+
+  border-radius: 18px;
+
+  transition: all 0.3s ease;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+}
+
+.feature-item i {
+  width: 60px;
+  height: 60px;
+
+  min-width: 60px;
+
+  border-radius: 15px;
+
+  background: linear-gradient(135deg, #03265c, #0b4da1);
+
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 24px;
+}
+
+.feature-item h4 {
+  color: #03265c;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.feature-item p {
+  margin: 0;
+  color: #666;
+  line-height: 1.7;
+}
+
+/* Image */
+
+.interactive-image {
+  position: relative;
+}
+
+.interactive-image img {
+  width: 100%;
+  border-radius: 25px;
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Floating Box */
+
+.floating-box {
+  position: absolute;
+
+  bottom: 30px;
+  right: -20px;
+
+  background: linear-gradient(135deg, #03265c, #0b4da1);
+
+  color: #fff;
+
+  padding: 25px 30px;
+
+  border-radius: 20px;
+
+  text-align: center;
+
+  box-shadow: 0 15px 35px rgba(3, 38, 92, 0.25);
+}
+
+.floating-box h3 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.floating-box span {
+  font-size: 14px;
+}
+
+/* Responsive */
+
+@media (max-width: 991px) {
+  .interactive-learning-section {
+    padding: 80px 0;
+  }
+
+  .interactive-image {
+    margin-top: 40px;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .interactive-learning-section {
+    padding: 70px 0;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .feature-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .feature-item i {
+    margin: auto;
+  }
+
+  .floating-box {
+    position: relative;
+
+    right: auto;
+    bottom: auto;
+
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .feature-item {
+    padding: 18px;
+  }
+
+  .feature-item h4 {
+    font-size: 18px;
+  }
+}
+
+/* ==================================
+   KINDERGARTEN GALLERY
+================================== */
+
+.kg-gallery-section {
+  padding: 100px 0;
+  background: #f8fafc;
+}
+
+/* Heading */
+
+.section-tag {
+  display: inline-block;
+
+  background: #03265c;
+  color: white;
+
+  padding: 8px 22px;
+  border-radius: 30px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  margin-bottom: 15px;
+}
+
+.section-title {
+  color: #03265c;
+
+  font-size: 2.8rem;
+  font-weight: 800;
+
+  margin-bottom: 20px;
+}
+
+.section-title span {
+  color: #0b4da1;
+}
+
+.section-description {
+  color: #666;
+  line-height: 1.9;
+}
+
+/* Gallery */
+
+.gallery-item {
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 20px;
+
+  cursor: pointer;
+
+  height: 280px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: 0.5s ease;
+}
+
+/* Overlay */
+
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(3, 38, 92, 0.75);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+
+  transition: 0.4s ease;
+}
+
+.gallery-overlay i {
+  color: white;
+  font-size: 40px;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+/* Modal */
+
+.gallery-modal {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.95);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 99999;
+
+  padding: 20px;
+}
+
+.modal-image {
+  max-width: 90%;
+  max-height: 90vh;
+
+  border-radius: 15px;
+
+  animation: zoomIn 0.3s ease;
+}
+
+.close-btn {
+  position: absolute;
+
+  top: 20px;
+  right: 30px;
+
+  color: white;
+
+  font-size: 40px;
+
+  cursor: pointer;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .kg-gallery-section {
+    padding: 70px 0;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .gallery-item {
+    height: 220px;
+  }
+
+  .modal-image {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .gallery-item {
+    height: 200px;
+  }
+}
+
+.parent-partnership-section {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.partnership-content p {
+  color: #666;
+  line-height: 1.9;
+}
+
+.partnership-points {
+  margin-top: 30px;
+}
+
+.point-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+  color: #03265c;
+  font-weight: 600;
+}
+
+.point-item i {
+  width: 28px;
+  height: 28px;
+  background: #03265c;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.partnership-image img {
+  width: 100%;
+  border-radius: 25px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.faq-section {
+  padding: 100px 0;
+  background: #f8fafc;
+}
+
+.accordion-item {
+  border: none;
+  margin-bottom: 15px;
+  border-radius: 15px !important;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.accordion-button {
+  font-weight: 600;
+  color: #03265c;
+  padding: 20px;
+}
+
+.accordion-button:not(.collapsed) {
+  background: #03265c;
+  color: white;
+}
+
+.accordion-body {
+  line-height: 1.8;
+  color: #666;
+}
+
+.admission-cta {
+  padding: 100px 0;
+  background:
+    linear-gradient(135deg, rgba(65, 78, 97, 0.95), rgba(178, 180, 180, 0.95)),
+    url('/home/admission-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+}
+
+.cta-wrapper {
+  text-align: center;
+  color: white;
+}
+
+.cta-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px 25px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.cta-content h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+.cta-content p {
+  max-width: 850px;
+  margin: auto;
+  line-height: 1.9;
+  opacity: 0.95;
+}
+
+.cta-buttons {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cta-buttons .btn {
+  padding: 14px 30px;
+  border-radius: 50px;
+  font-weight: 700;
+}

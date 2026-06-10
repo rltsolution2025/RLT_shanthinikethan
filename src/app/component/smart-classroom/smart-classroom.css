@@ -1,0 +1,231 @@
+/* ==================================
+   SMART CLASSROOM HERO
+================================== */
+
+.smart-classroom-hero {
+  position: relative;
+  min-height: 100vh;
+
+  background-image: url('/assets/images/smart-classroom-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+}
+
+/* Overlay */
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(46, 62, 94, 0.95) 0%,
+    rgba(3, 39, 92, 0.85) 35%,
+    rgba(3, 38, 92, 0.45) 65%,
+    rgba(3, 38, 92, 0.15) 100%
+  );
+}
+
+.smart-classroom-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* ==================================
+   BREADCRUMB
+================================== */
+
+.breadcrumb-wrapper {
+  padding-top: 120px;
+}
+
+.breadcrumb {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.breadcrumb-item {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.breadcrumb-item a {
+  color: #ffd54f;
+  text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+  color: #ffffff;
+}
+
+.breadcrumb-item.active {
+  color: #ffffff;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* ==================================
+   HERO CONTENT
+================================== */
+
+.hero-content {
+  color: #ffffff;
+}
+
+.hero-badge {
+  display: inline-block;
+
+  padding: 10px 22px;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  border-radius: 50px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  margin-bottom: 20px;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: 800;
+
+  line-height: 1.2;
+
+  margin-bottom: 25px;
+}
+
+.hero-content h1 span {
+  color: #ffd54f;
+}
+
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.9;
+
+  color: rgba(255, 255, 255, 0.92);
+
+  max-width: 750px;
+
+  margin-bottom: 35px;
+}
+
+/* Buttons */
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn-primary-custom {
+  background: #ffd54f;
+  color: #03265c;
+
+  padding: 14px 32px;
+
+  border-radius: 50px;
+
+  text-decoration: none;
+
+  font-weight: 700;
+
+  transition: 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+  background: #ffca28;
+  color: #03265c;
+  transform: translateY(-3px);
+}
+
+.btn-outline-custom {
+  border: 2px solid rgba(255, 255, 255, 0.4);
+
+  color: #ffffff;
+
+  padding: 14px 32px;
+
+  border-radius: 50px;
+
+  text-decoration: none;
+
+  font-weight: 700;
+
+  transition: 0.3s ease;
+}
+
+.btn-outline-custom:hover {
+  background: #ffffff;
+  color: #03265c;
+}
+
+/* ==================================
+   RESPONSIVE
+================================== */
+
+@media (max-width: 991px) {
+  .breadcrumb-wrapper {
+    padding-top: 100px;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .smart-classroom-hero {
+    min-height: auto;
+    padding-bottom: 80px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.3rem;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .btn-primary-custom,
+  .btn-outline-custom {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-badge {
+    font-size: 12px;
+  }
+
+  .breadcrumb-item {
+    font-size: 13px;
+  }
+}

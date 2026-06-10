@@ -1,0 +1,309 @@
+/* =========================
+   Announcement Bar
+========================= */
+
+.announcement-bar {
+  background: linear-gradient(90deg, #ffffff, #e9e7e1);
+  color: #000;
+  font-weight: 600;
+  padding: 8px 0;
+  font-size: 14px;
+}
+
+/* =========================
+   Main Header
+========================= */
+
+.main-header {
+  background: linear-gradient(135deg, #03265c, #123257);
+  padding: 18px 0;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* =========================
+   Brand Area
+========================= */
+
+.school-brand {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.school-logo {
+  width: 105px;
+  height: 105px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.school-details h1 {
+  color: #fff;
+  font-size: 34px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.school-details p {
+  color: rgba(255, 255, 255, 0.95);
+  margin: 0;
+  font-size: 16px;
+}
+
+.school-details span {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 13px;
+}
+
+/* =========================
+   Contact Area
+========================= */
+
+.header-contact {
+  display: flex;
+  gap: 20px;
+}
+
+.info-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 12px 18px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.info-box i {
+  width: 48px;
+  height: 48px;
+  background: #fff;
+  color: #1565c0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.info-box small {
+  color: rgba(255, 255, 255, 0.8);
+  display: block;
+}
+
+.info-box h6 {
+  margin: 0;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* =========================
+   Navbar
+========================= */
+
+.school-navbar {
+  background: #081c3d;
+  padding: 0;
+}
+
+.school-navbar .nav-link {
+  color: #fff !important;
+  padding: 18px 16px !important;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.school-navbar .nav-link:hover {
+  color: #dbdbdb !important;
+}
+
+/* =========================
+   Dropdown
+========================= */
+
+.dropdown-menu {
+  border: none;
+  border-radius: 12px;
+  padding: 10px;
+  min-width: 240px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.dropdown-item {
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.dropdown-item:hover {
+  background: #eef5ff;
+  color: #1565c0;
+}
+
+/* =========================
+   Admission Button
+========================= */
+
+.admission-btn {
+  background: #ffffff;
+  color: #000;
+  border-radius: 30px;
+  padding: 10px 22px;
+  font-weight: 700;
+  border: none;
+}
+
+.admission-btn:hover {
+  background: #fafdff;
+  color: #000;
+}
+
+.custom-toggler {
+  border: none;
+  color: white;
+  font-size: 28px;
+  box-shadow: none !important;
+}
+
+.custom-toggler:focus {
+  box-shadow: none;
+}
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 991px) {
+  .header-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .header-contact {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .info-box {
+    width: 100%;
+  }
+
+  .school-details h1 {
+    font-size: 24px;
+  }
+
+  .school-details p {
+    font-size: 14px;
+  }
+
+  .school-logo {
+    width: 75px;
+    height: 75px;
+  }
+
+  .school-brand {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .admission-btn {
+    margin-top: 15px;
+    width: 100%;
+  }
+}
+.mobile-header {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .announcement-bar,
+  .main-header {
+    display: none;
+  }
+
+  .mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #03265c;
+    padding: 12px 15px;
+  }
+
+  .mobile-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+
+  .mobile-brand img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: white;
+    padding: 3px;
+  }
+
+  .mobile-brand h5 {
+    margin: 0;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+  }
+
+  .mobile-brand span {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 11px;
+  }
+
+  .mobile-menu-btn {
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 28px;
+  }
+
+  .school-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1050;
+  }
+
+  .navbar-collapse {
+    background: #081c3d;
+    padding: 15px;
+    border-radius: 0 0 12px 12px;
+  }
+
+  .school-navbar .nav-link {
+    padding: 12px 0 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .dropdown-menu {
+    background: #102b57;
+    border: none;
+    margin-top: 10px;
+  }
+
+  .dropdown-item {
+    color: white;
+  }
+
+  .dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+
+  .admission-btn {
+    width: 100%;
+    margin-top: 15px;
+  }
+}

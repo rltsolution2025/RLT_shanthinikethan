@@ -1,0 +1,1331 @@
+/* ==================================
+   ADMISSION HERO SECTION
+================================== */
+
+.admission-hero {
+  position: relative;
+  min-height: 100vh;
+
+  background-image: url('/home/Artboard 5.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+}
+
+/* Overlay */
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    #2e3e5ed0 0%,
+    rgba(3, 39, 92, 0.733) 35%,
+    rgba(3, 38, 92, 0.4) 65%,
+    rgba(3, 38, 92, 0.15) 100%
+  );
+}
+
+.admission-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* ==================================
+   BREADCRUMB
+================================== */
+
+.breadcrumb-wrapper {
+  padding-top: 120px;
+}
+
+.breadcrumb {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.breadcrumb-item {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.breadcrumb-item a {
+  color: #ffd54f;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.breadcrumb-item a:hover {
+  color: #ffffff;
+}
+
+.breadcrumb-item.active {
+  color: #ffffff;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* ==================================
+   HERO CONTENT
+================================== */
+
+.hero-content {
+  color: #fff;
+}
+
+.hero-badge {
+  display: inline-block;
+
+  padding: 10px 22px;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  border-radius: 50px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  margin-bottom: 20px;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: 800;
+
+  line-height: 1.2;
+
+  margin-bottom: 25px;
+}
+
+.hero-content h1 span {
+  color: #ffd54f;
+}
+
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.9;
+
+  color: rgba(255, 255, 255, 0.92);
+
+  max-width: 750px;
+
+  margin-bottom: 35px;
+}
+
+/* ==================================
+   BUTTONS
+================================== */
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn-primary-custom {
+  background: #ffd54f;
+  color: #03265c;
+
+  text-decoration: none;
+
+  padding: 14px 32px;
+
+  border-radius: 50px;
+
+  font-weight: 700;
+
+  transition: 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+  background: #ffca28;
+
+  color: #03265c;
+
+  transform: translateY(-3px);
+}
+
+.btn-outline-custom {
+  border: 2px solid rgba(255, 255, 255, 0.35);
+
+  color: #fff;
+
+  text-decoration: none;
+
+  padding: 14px 32px;
+
+  border-radius: 50px;
+
+  font-weight: 700;
+
+  transition: 0.3s ease;
+}
+
+.btn-outline-custom:hover {
+  background: #fff;
+  color: #03265c;
+}
+
+/* ==================================
+   RESPONSIVE
+================================== */
+
+@media (max-width: 991px) {
+  .breadcrumb-wrapper {
+    padding-top: 100px;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .hero-content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .admission-hero {
+    min-height: auto;
+    padding-bottom: 70px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.3rem;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .btn-primary-custom,
+  .btn-outline-custom {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-badge {
+    font-size: 12px;
+  }
+
+  .breadcrumb-item {
+    font-size: 13px;
+  }
+}
+
+/* ==================================
+   WELCOME TO ADMISSIONS
+================================== */
+
+.welcome-admission-section {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+/* Image */
+
+.welcome-image {
+  position: relative;
+}
+
+.welcome-image img {
+  width: 100%;
+  border-radius: 25px;
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+
+  transition: 0.4s ease;
+}
+
+.welcome-image:hover img {
+  transform: scale(1.02);
+}
+
+/* Badge */
+
+.welcome-badge {
+  position: absolute;
+
+  right: -20px;
+  bottom: 30px;
+
+  background: linear-gradient(135deg, #03265c, #0b4da1);
+
+  color: #fff;
+
+  padding: 20px 25px;
+
+  border-radius: 18px;
+
+  text-align: center;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.welcome-badge h4 {
+  margin: 0;
+
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.welcome-badge span {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+/* Content */
+
+.section-tag {
+  display: inline-block;
+
+  background: #03265c;
+  color: #fff;
+
+  padding: 8px 20px;
+
+  border-radius: 30px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  margin-bottom: 20px;
+}
+
+.section-title {
+  color: #03265c;
+
+  font-size: 2.8rem;
+  font-weight: 800;
+
+  line-height: 1.3;
+
+  margin-bottom: 25px;
+}
+
+.section-title span {
+  color: #0b4da1;
+}
+
+.welcome-content p {
+  color: #666;
+
+  line-height: 1.9;
+
+  margin-bottom: 18px;
+
+  text-align: justify;
+}
+
+/* Features */
+
+.welcome-features {
+  margin-top: 30px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 15px;
+
+  color: #03265c;
+  font-weight: 600;
+}
+
+.feature-item i {
+  width: 28px;
+  height: 28px;
+
+  background: #03265c;
+  color: #fff;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 12px;
+}
+
+/* Responsive */
+
+@media (max-width: 991px) {
+  .welcome-admission-section {
+    padding: 80px 0;
+  }
+
+  .welcome-image {
+    margin-bottom: 40px;
+  }
+
+  .welcome-badge {
+    position: relative;
+
+    right: auto;
+    bottom: auto;
+
+    display: inline-block;
+
+    margin-top: 20px;
+  }
+
+  .section-title {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome-admission-section {
+    padding: 70px 0;
+  }
+
+  .section-title {
+    font-size: 1.9rem;
+  }
+
+  .welcome-content p {
+    text-align: left;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .section-tag {
+    font-size: 12px;
+  }
+
+  .welcome-badge h4 {
+    font-size: 18px;
+  }
+}
+
+/* ==================================
+   WHY CHOOSE SECTION
+================================== */
+
+.why-choose-section {
+  padding: 100px 0;
+  background: #f8fafc;
+}
+
+/* Section Header */
+
+.section-header {
+  max-width: 900px;
+  margin: 0 auto 60px;
+}
+
+.section-tag {
+  display: inline-block;
+
+  background: #03265c;
+  color: #fff;
+
+  padding: 8px 20px;
+
+  border-radius: 30px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+
+  color: #03265c;
+
+  line-height: 1.3;
+
+  margin-bottom: 20px;
+}
+
+.section-title span {
+  color: #0b4da1;
+}
+
+.section-description {
+  color: #666;
+  line-height: 1.9;
+  font-size: 16px;
+}
+
+/* Cards */
+
+.choose-card {
+  background: #fff;
+
+  padding: 35px 25px;
+
+  border-radius: 20px;
+
+  height: 100%;
+
+  text-align: center;
+
+  transition: all 0.3s ease;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.choose-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.icon-box {
+  width: 80px;
+  height: 80px;
+
+  margin: 0 auto 20px;
+
+  border-radius: 20px;
+
+  background: linear-gradient(135deg, #03265c, #0b4da1);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-box i {
+  color: #fff;
+  font-size: 32px;
+}
+
+.choose-card h4 {
+  color: #03265c;
+
+  font-size: 1.3rem;
+  font-weight: 700;
+
+  margin-bottom: 15px;
+}
+
+.choose-card p {
+  color: #666;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Responsive */
+
+@media (max-width: 991px) {
+  .why-choose-section {
+    padding: 80px 0;
+  }
+
+  .section-title {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-choose-section {
+    padding: 70px 0;
+  }
+
+  .section-title {
+    font-size: 1.9rem;
+  }
+
+  .choose-card {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .section-tag {
+    font-size: 12px;
+  }
+
+  .icon-box {
+    width: 70px;
+    height: 70px;
+  }
+
+  .icon-box i {
+    font-size: 28px;
+  }
+}
+
+/* ==================================
+   ADMISSION PROCESS OVERVIEW
+================================== */
+
+.admission-overview-section {
+  padding: 100px 0;
+  background: #f8fafc;
+}
+
+/* Heading */
+
+.section-tag {
+  display: inline-block;
+
+  background: #03265c;
+  color: #fff;
+
+  padding: 8px 20px;
+
+  border-radius: 30px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+
+  color: #03265c;
+
+  line-height: 1.3;
+
+  margin-bottom: 20px;
+}
+
+.section-title span {
+  color: #0b4da1;
+}
+
+.section-description {
+  max-width: 900px;
+
+  margin: auto;
+
+  color: #666;
+
+  line-height: 1.9;
+}
+
+/* Timeline */
+
+.process-wrapper {
+  max-width: 1000px;
+  margin: 60px auto 0;
+}
+
+.process-step {
+  display: flex;
+  gap: 30px;
+
+  position: relative;
+
+  padding-bottom: 40px;
+}
+
+.process-step:not(:last-child)::before {
+  content: '';
+
+  position: absolute;
+
+  left: 30px;
+  top: 70px;
+
+  width: 3px;
+  height: calc(100% - 20px);
+
+  background: #dbe4f0;
+}
+
+/* Number */
+
+.step-number {
+  width: 60px;
+  height: 60px;
+
+  min-width: 60px;
+
+  background: linear-gradient(135deg, #03265c, #0b4da1);
+
+  color: #fff;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 20px;
+  font-weight: 700;
+
+  position: relative;
+  z-index: 2;
+}
+
+/* Content */
+
+.step-content {
+  flex: 1;
+
+  background: #fff;
+
+  padding: 25px 30px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.step-content h4 {
+  color: #03265c;
+
+  font-size: 1.3rem;
+  font-weight: 700;
+
+  margin-bottom: 12px;
+}
+
+.step-content p {
+  color: #666;
+
+  line-height: 1.8;
+
+  margin: 0;
+}
+
+/* Responsive */
+
+@media (max-width: 991px) {
+  .admission-overview-section {
+    padding: 80px 0;
+  }
+
+  .section-title {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .admission-overview-section {
+    padding: 70px 0;
+  }
+
+  .process-step {
+    gap: 20px;
+  }
+
+  .step-number {
+    width: 50px;
+    height: 50px;
+
+    min-width: 50px;
+
+    font-size: 16px;
+  }
+
+  .process-step:not(:last-child)::before {
+    left: 24px;
+  }
+
+  .step-content {
+    padding: 20px;
+  }
+
+  .section-title {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .process-step {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .process-step:not(:last-child)::before {
+    display: none;
+  }
+
+  .step-number {
+    margin: 0 auto;
+  }
+
+  .step-content {
+    text-align: center;
+  }
+}
+
+/* ==================================
+   ADMISSION STEPS
+================================== */
+
+.admission-steps-section {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+/* Header */
+
+.section-header {
+  max-width: 900px;
+  margin: 0 auto 60px;
+}
+
+.section-tag {
+  display: inline-block;
+
+  background: #03265c;
+  color: #fff;
+
+  padding: 8px 20px;
+
+  border-radius: 30px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  margin-bottom: 20px;
+}
+
+.section-title {
+  color: #03265c;
+
+  font-size: 2.8rem;
+  font-weight: 800;
+
+  margin-bottom: 20px;
+}
+
+.section-title span {
+  color: #0b4da1;
+}
+
+.section-description {
+  color: #666;
+  line-height: 1.9;
+}
+
+/* Cards */
+
+.step-card {
+  background: #f8fafc;
+
+  padding: 35px;
+
+  border-radius: 20px;
+
+  height: 100%;
+
+  position: relative;
+
+  transition: 0.3s ease;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.step-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.step-number {
+  width: 60px;
+  height: 60px;
+
+  background: linear-gradient(135deg, #03265c, #0b4da1);
+
+  color: #fff;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 20px;
+  font-weight: 700;
+
+  margin-bottom: 20px;
+}
+
+.step-card h4 {
+  color: #03265c;
+
+  font-size: 1.3rem;
+  font-weight: 700;
+
+  margin-bottom: 15px;
+}
+
+.step-card p {
+  color: #666;
+
+  line-height: 1.8;
+
+  margin: 0;
+}
+
+.final-step {
+  text-align: center;
+
+  background: linear-gradient(135deg, #03265c, #0b4da1);
+
+  color: #fff;
+}
+
+.final-step h4,
+.final-step p {
+  color: #fff;
+}
+
+.final-step .step-number {
+  margin: 0 auto 20px;
+
+  background: #ffd54f;
+  color: #03265c;
+}
+
+/* Responsive */
+
+@media (max-width: 991px) {
+  .admission-steps-section {
+    padding: 80px 0;
+  }
+
+  .section-title {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .admission-steps-section {
+    padding: 70px 0;
+  }
+
+  .section-title {
+    font-size: 1.9rem;
+  }
+
+  .step-card {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .section-tag {
+    font-size: 12px;
+  }
+
+  .step-number {
+    width: 50px;
+    height: 50px;
+
+    font-size: 16px;
+  }
+}
+
+/* ==================================
+   DOCUMENTS REQUIRED
+================================== */
+
+.documents-section {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+/* Cards */
+
+.document-card {
+  background: #f8fafc;
+
+  padding: 35px;
+
+  border-radius: 20px;
+
+  height: 100%;
+
+  transition: 0.3s ease;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.document-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Icon */
+
+.card-icon {
+  width: 80px;
+  height: 80px;
+
+  background: linear-gradient(135deg, #03265c, #0b4da1);
+
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 25px;
+}
+
+.card-icon i {
+  color: #fff;
+  font-size: 34px;
+}
+
+/* Title */
+
+.document-card h4 {
+  color: #03265c;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+
+  margin-bottom: 20px;
+}
+
+/* List */
+
+.document-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.document-card ul li {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 12px;
+
+  padding: 10px 0;
+
+  color: #555;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.document-card ul li:last-child {
+  border-bottom: none;
+}
+
+.document-card ul li i {
+  color: #0b4da1;
+  margin-top: 4px;
+}
+
+/* Note */
+
+.document-note {
+  margin-top: 50px;
+
+  background: #eef5ff;
+
+  border-left: 5px solid #03265c;
+
+  padding: 25px 30px;
+
+  border-radius: 0 15px 15px 0;
+
+  display: flex;
+  gap: 15px;
+}
+
+.document-note i {
+  color: #03265c;
+  font-size: 24px;
+}
+
+.document-note p {
+  margin: 0;
+
+  color: #555;
+
+  line-height: 1.8;
+}
+
+/* Responsive */
+
+@media (max-width: 991px) {
+  .documents-section {
+    padding: 80px 0;
+  }
+
+  .document-card {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .documents-section {
+    padding: 70px 0;
+  }
+
+  .document-note {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .document-card {
+    padding: 25px;
+  }
+
+  .card-icon {
+    width: 65px;
+    height: 65px;
+  }
+
+  .card-icon i {
+    font-size: 28px;
+  }
+}
+
+/* ==================================
+   ADMISSION GUIDELINES
+================================== */
+
+.guidelines-section {
+  padding: 100px 0;
+  background: #f8fafc;
+}
+
+/* Cards */
+
+.guideline-card {
+  background: #ffffff;
+
+  padding: 35px;
+
+  border-radius: 20px;
+
+  height: 100%;
+
+  transition: 0.3s ease;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.guideline-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Icon */
+
+.card-icon {
+  width: 75px;
+  height: 75px;
+
+  border-radius: 18px;
+
+  background: linear-gradient(135deg, #03265c, #0b4da1);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 20px;
+}
+
+.card-icon i {
+  color: #fff;
+  font-size: 30px;
+}
+
+/* Content */
+
+.guideline-card h4 {
+  color: #03265c;
+
+  font-size: 1.3rem;
+  font-weight: 700;
+
+  margin-bottom: 15px;
+}
+
+.guideline-card p {
+  color: #666;
+
+  line-height: 1.8;
+
+  margin: 0;
+}
+
+/* Important Note */
+
+.guidelines-note {
+  margin-top: 50px;
+
+  background: #ffffff;
+
+  border-left: 5px solid #03265c;
+
+  padding: 30px;
+
+  border-radius: 0 15px 15px 0;
+
+  display: flex;
+  gap: 20px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.guidelines-note i {
+  color: #03265c;
+  font-size: 28px;
+}
+
+.guidelines-note h5 {
+  color: #03265c;
+
+  font-weight: 700;
+
+  margin-bottom: 10px;
+}
+
+.guidelines-note p {
+  margin: 0;
+
+  color: #666;
+
+  line-height: 1.8;
+}
+
+/* Responsive */
+
+@media (max-width: 991px) {
+  .guidelines-section {
+    padding: 80px 0;
+  }
+
+  .guideline-card {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .guidelines-section {
+    padding: 70px 0;
+  }
+
+  .guidelines-note {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .guideline-card {
+    padding: 25px;
+  }
+
+  .card-icon {
+    width: 65px;
+    height: 65px;
+  }
+
+  .card-icon i {
+    font-size: 26px;
+  }
+}
+
+.admission-cta {
+  padding: 100px 0;
+  background:
+    linear-gradient(135deg, rgba(65, 78, 97, 0.95), rgba(178, 180, 180, 0.95)),
+    url('/home/admission-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+}
+
+.cta-wrapper {
+  text-align: center;
+  color: white;
+}
+
+.cta-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px 25px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.cta-content h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+.cta-content p {
+  max-width: 850px;
+  margin: auto;
+  line-height: 1.9;
+  opacity: 0.95;
+}
+
+.cta-buttons {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cta-buttons .btn {
+  padding: 14px 30px;
+  border-radius: 50px;
+  font-weight: 700;
+}

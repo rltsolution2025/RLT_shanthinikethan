@@ -1,0 +1,749 @@
+<section class="hero-slider">
+  <div
+    class="slide"
+    *ngFor="let slide of slides; let i = index"
+    [class.active]="i === currentSlide"
+  >
+    <img [src]="slide.image" [alt]="slide.title" />
+
+    <div class="overlay"></div>
+
+    <div class="slide-content">
+      <div class="hero-badge">RLT Shanthinikethan</div>
+
+      <h1>
+        {{ slide.title }}
+      </h1>
+
+      <p>
+        {{ slide.subtitle }}
+      </p>
+
+      <a [routerLink]="slide.buttonLink" class="hero-btn">
+        <i [class]="slide.icon"></i>
+        {{ slide.buttonText }}
+      </a>
+    </div>
+  </div>
+
+  <!-- Arrows -->
+
+  <button class="slider-arrow prev" (click)="prevSlide()">
+    <i class="fa-solid fa-chevron-left"></i>
+  </button>
+
+  <button class="slider-arrow next" (click)="nextSlide()">
+    <i class="fa-solid fa-chevron-right"></i>
+  </button>
+
+  <!-- Dots -->
+
+  <div class="slider-dots">
+    <span
+      *ngFor="let slide of slides; let i = index"
+      [class.active]="i === currentSlide"
+      (click)="currentSlide = i"
+    >
+    </span>
+  </div>
+</section>
+<section class="about-edu-section">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <!-- Content -->
+
+      <div class="col-lg-6">
+        <span class="section-tag"> Innovative ● Education </span>
+
+        <h2 class="section-title">India's 1st Bagless Educational Institution</h2>
+
+        <p class="section-description">
+          RLT Shanthinikethan is redefining the future of education through a unique bagless
+          learning approach that reduces academic burden while enhancing practical knowledge,
+          creativity, and critical thinking.
+        </p>
+
+        <p class="section-description">
+          Our students learn through experiential activities, smart classrooms, project-based
+          learning, skill development programs, and real-world applications that make education
+          meaningful, engaging, and enjoyable.
+        </p>
+
+        <div class="features">
+          <div class="feature-item">
+            <i class="fa-solid fa-book-open-reader"></i>
+            <span>Cloud-Based Learning</span>
+          </div>
+
+          <div class="feature-item">
+            <i class="fa-solid fa-lightbulb"></i>
+            <span>Creative Thinking</span>
+          </div>
+
+          <div class="feature-item">
+            <i class="fa-solid fa-laptop"></i>
+            <span>Smart Classrooms</span>
+          </div>
+
+          <div class="feature-item">
+            <i class="fa-solid fa-user-graduate"></i>
+            <span>Skill-Based Education</span>
+          </div>
+        </div>
+
+        <a routerLink="/about-us" class="learn-more-btn">
+          Explore More
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <!-- Image -->
+
+      <div class="col-lg-6">
+        <div class="image-wrapper">
+          <img
+            src="assets/images/about-edu.jpg"
+            alt="India's 1st Bagless Educational Institution"
+            class="about-image"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why-rlt-section py-5">
+  <div class="container">
+    <!-- Section Heading -->
+
+    <div class="row justify-content-center text-center mb-5">
+      <div class="col-lg-8">
+        <span class="section-tag"> Why Choose Us </span>
+
+        <h2 class="section-title">Why RLT Shanthinikethan?</h2>
+
+        <p class="section-subtitle">
+          We provide a future-ready learning environment that combines academic excellence,
+          innovation, technology, values, and holistic development to empower every student for
+          lifelong success.
+        </p>
+      </div>
+    </div>
+
+    <!-- Features -->
+
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="why-card">
+          <div class="icon-box">
+            <i class="fa-solid fa-school"></i>
+          </div>
+
+          <h4>India's 1st Bagless Learning Model</h4>
+
+          <p>
+            A unique educational approach that reduces academic burden while promoting practical
+            learning and creativity.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="why-card">
+          <div class="icon-box">
+            <i class="fa-solid fa-display"></i>
+          </div>
+
+          <h4>Interactive Smart Classrooms</h4>
+
+          <p>
+            Modern digital classrooms that make learning engaging, collaborative, and highly
+            interactive.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="why-card">
+          <div class="icon-box">
+            <i class="fa-solid fa-cloud"></i>
+          </div>
+
+          <h4>Cloud-Based Learning</h4>
+
+          <p>
+            Students can access learning resources, assignments, and academic materials anytime and
+            anywhere.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="why-card">
+          <div class="icon-box">
+            <i class="fa-solid fa-user-graduate"></i>
+          </div>
+
+          <h4>Academic Excellence</h4>
+
+          <p>
+            Strong academic foundation supported by experienced educators and innovative teaching
+            methodologies.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="why-card">
+          <div class="icon-box">
+            <i class="fa-solid fa-lightbulb"></i>
+          </div>
+
+          <h4>Skill Development Programs</h4>
+
+          <p>
+            Fostering leadership, creativity, communication, critical thinking, and problem-solving
+            skills.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="why-card">
+          <div class="icon-box">
+            <i class="fa-solid fa-globe"></i>
+          </div>
+
+          <h4>Future-Ready Education</h4>
+
+          <p>
+            Preparing students to thrive in a rapidly evolving world through innovation and global
+            perspectives.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Highlight -->
+
+    <div class="row mt-5">
+      <div class="col-12">
+        <div class="highlight-box">
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <h3>Building Future Leaders Through Knowledge, Values & Innovation</h3>
+
+              <p>
+                Join a learning community that nurtures excellence, confidence, character, and
+                lifelong learning.
+              </p>
+            </div>
+
+            <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+              <a routerLink="/admission" class="btn explore-btn">
+                Admission Open
+                <i class="fa-solid fa-arrow-right ms-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="learning-ecosystem-section">
+  <div class="container">
+    <!-- Section Header -->
+
+    <div class="row justify-content-center text-center mb-5">
+      <div class="col-lg-8">
+        <span class="section-tag"> Learning Ecosystem </span>
+
+        <h2 class="section-title">Our Learning Ecosystem</h2>
+
+        <p class="section-subtitle">
+          We create a dynamic learning environment where technology, innovation, creativity, and
+          academic excellence work together to nurture confident, future-ready learners.
+        </p>
+      </div>
+    </div>
+
+    <!-- Blurbs -->
+
+    <div class="row gy-5">
+      <div class="col-lg-4 col-md-6">
+        <div class="ecosystem-blurb">
+          <div class="blurb-icon">
+            <i class="fa-solid fa-display"></i>
+          </div>
+
+          <h4>Interactive Learning</h4>
+
+          <p>
+            Active classroom participation through discussions, collaborative activities, digital
+            tools, and practical experiences that make learning engaging and meaningful.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="ecosystem-blurb">
+          <div class="blurb-icon">
+            <i class="fa-solid fa-cloud"></i>
+          </div>
+
+          <h4>Cloud-Based Learning</h4>
+
+          <p>
+            Access educational resources, assignments, learning materials, and academic support
+            anytime and anywhere through our cloud-enabled learning platform.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="ecosystem-blurb">
+          <div class="blurb-icon">
+            <i class="fa-solid fa-chalkboard-user"></i>
+          </div>
+
+          <h4>Smart Classrooms</h4>
+
+          <p>
+            Technology-enhanced classrooms equipped with interactive tools that encourage visual
+            learning and deeper understanding.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="ecosystem-blurb">
+          <div class="blurb-icon">
+            <i class="fa-solid fa-flask"></i>
+          </div>
+
+          <h4>Experiential Learning</h4>
+
+          <p>
+            Learning through projects, experiments, field visits, and hands-on activities that
+            connect theory with real-world applications.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="ecosystem-blurb">
+          <div class="blurb-icon">
+            <i class="fa-solid fa-lightbulb"></i>
+          </div>
+
+          <h4>Skill Development</h4>
+
+          <p>
+            Fostering leadership, communication, creativity, critical thinking, teamwork, and
+            problem-solving skills for future success.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="ecosystem-blurb">
+          <div class="blurb-icon">
+            <i class="fa-solid fa-user-graduate"></i>
+          </div>
+
+          <h4>Holistic Development</h4>
+
+          <p>
+            Balancing academics, sports, arts, values, and co-curricular activities to develop
+            well-rounded and responsible individuals.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Content -->
+
+    <div class="ecosystem-bottom text-center">
+      <h3>Preparing Students For Lifelong Learning</h3>
+
+      <p>
+        Through innovation, technology, value-based education, and student-centered learning
+        experiences, we empower every learner to excel academically and personally.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="student-life-section">
+  <div class="container">
+    <!-- Section Heading -->
+
+    <div class="row justify-content-center text-center mb-5">
+      <div class="col-lg-8">
+        <span class="section-tag"> Student Life </span>
+
+        <h2 class="section-title">Student Life at RLT Shanthinikethan</h2>
+
+        <p class="section-subtitle">
+          At RLT Shanthinikethan, education extends beyond academics. We provide a vibrant and
+          nurturing environment where students explore their talents, build confidence, develop
+          leadership qualities, and create lifelong memories through diverse experiences and
+          opportunities.
+        </p>
+      </div>
+    </div>
+
+    <!-- Student Life Blurbs -->
+
+    <div class="row gy-5">
+      <div class="col-lg-4 col-md-6">
+        <div class="life-blurb">
+          <div class="life-icon">
+            <i class="fa-solid fa-futbol"></i>
+          </div>
+
+          <h4>Sports & Athletics</h4>
+
+          <p>
+            Students participate in various indoor and outdoor sports, promoting physical fitness,
+            teamwork, discipline, and a healthy competitive spirit.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="life-blurb">
+          <div class="life-icon">
+            <i class="fa-solid fa-masks-theater"></i>
+          </div>
+
+          <h4>Arts & Cultural Activities</h4>
+
+          <p>
+            Music, dance, drama, fine arts, and cultural programs help students express creativity
+            and showcase their unique talents.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="life-blurb">
+          <div class="life-icon">
+            <i class="fa-solid fa-user-group"></i>
+          </div>
+
+          <h4>Leadership Development</h4>
+
+          <p>
+            Student councils, leadership initiatives, and team activities help develop confidence,
+            responsibility, and decision-making skills.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="life-blurb">
+          <div class="life-icon">
+            <i class="fa-solid fa-lightbulb"></i>
+          </div>
+
+          <h4>Innovation & Creativity</h4>
+
+          <p>
+            Through projects, exhibitions, competitions, and innovation programs, students are
+            encouraged to think creatively and solve problems.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="life-blurb">
+          <div class="life-icon">
+            <i class="fa-solid fa-earth-asia"></i>
+          </div>
+
+          <h4>Educational Tours</h4>
+
+          <p>
+            Field trips and educational visits provide real-world exposure and enrich learning
+            through practical experiences.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="life-blurb">
+          <div class="life-icon">
+            <i class="fa-solid fa-handshake-angle"></i>
+          </div>
+
+          <h4>Community Engagement</h4>
+
+          <p>
+            Students participate in social responsibility initiatives that nurture empathy,
+            compassion, and civic awareness.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="facilities-section">
+  <div class="container">
+    <div class="section-header text-center">
+      <span class="section-tag">Facilities & Infrastructure</span>
+
+      <h2 class="section-title">Designed For Learning, Innovation & Excellence</h2>
+
+      <p class="section-subtitle">
+        Our campus combines modern infrastructure, advanced technology, and student-centric
+        facilities to create an inspiring environment where learning thrives every day.
+      </p>
+    </div>
+
+    <!-- Facility 01 -->
+
+    <div class="facility-row">
+      <div class="facility-image">
+        <img src="assets/images/smart-classroom.jpg" alt="Smart Classroom" />
+      </div>
+
+      <div class="facility-content">
+        <span class="facility-number">01</span>
+
+        <h3>Interactive Smart Classrooms</h3>
+
+        <p>
+          Technology-enabled classrooms equipped with interactive displays, multimedia learning
+          resources, and digital teaching tools that enhance engagement and improve conceptual
+          understanding.
+        </p>
+
+        <ul>
+          <li>Interactive Digital Boards</li>
+          <li>Visual Learning Environment</li>
+          <li>Cloud-Based Academic Resources</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Facility 02 -->
+
+    <div class="facility-row reverse">
+      <div class="facility-image">
+        <img src="assets/images/laboratory.jpg" alt="Science Laboratory" />
+      </div>
+
+      <div class="facility-content">
+        <span class="facility-number">02</span>
+
+        <h3>Advanced Laboratories</h3>
+
+        <p>
+          Dedicated Physics, Chemistry, Biology and Computer laboratories encourage experimentation,
+          innovation, and hands-on learning experiences.
+        </p>
+
+        <ul>
+          <li>Modern Scientific Equipment</li>
+          <li>Practical Learning Sessions</li>
+          <li>STEM-Based Activities</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Facility 03 -->
+
+    <div class="facility-row">
+      <div class="facility-image">
+        <img src="assets/images/library.jpg" alt="Library" />
+      </div>
+
+      <div class="facility-content">
+        <span class="facility-number">03</span>
+
+        <h3>Library & Knowledge Centre</h3>
+
+        <p>
+          A vibrant learning hub with books, journals, digital resources, and research materials
+          that cultivate reading habits and independent learning.
+        </p>
+
+        <ul>
+          <li>Extensive Book Collection</li>
+          <li>Digital Resources</li>
+          <li>Reading & Research Spaces</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Facility 04 -->
+
+    <div class="facility-row reverse">
+      <div class="facility-image">
+        <img src="assets/images/sports.jpg" alt="Sports" />
+      </div>
+
+      <div class="facility-content">
+        <span class="facility-number">04</span>
+
+        <h3>Sports & Recreation Facilities</h3>
+
+        <p>
+          Comprehensive sports facilities support physical fitness, teamwork, leadership, and
+          overall well-being through a wide range of activities.
+        </p>
+
+        <ul>
+          <li>Indoor & Outdoor Sports</li>
+          <li>Fitness & Wellness Programs</li>
+          <li>Inter-School Competitions</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="achievements-section">
+  <div class="container">
+    <div class="text-center section-header">
+      <span class="section-tag">Achievements & Milestones</span>
+
+      <h2 class="section-title">Celebrating Excellence & Educational Innovation</h2>
+
+      <p class="section-subtitle">
+        Every achievement reflects our commitment to academic excellence, innovation, leadership
+        development, and holistic student growth.
+      </p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+      <div class="col-lg-3 col-md-6">
+        <div class="achievement-box">
+          <h3>25+</h3>
+          <p>Years of Educational Excellence</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="achievement-box">
+          <h3>5000+</h3>
+          <p>Students Empowered</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="achievement-box">
+          <h3>100%</h3>
+          <p>Technology-Enabled Learning</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="achievement-box">
+          <h3>50+</h3>
+          <p>Academic & Cultural Awards</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="home-gallery-section">
+  <div class="container">
+    <!-- Section Header -->
+
+    <div class="gallery-header text-center">
+      <span class="section-tag"> School Gallery </span>
+
+      <h2 class="section-title">Moments That Inspire Learning</h2>
+
+      <p class="section-subtitle">
+        Explore glimpses of academic excellence, student achievements, cultural celebrations, sports
+        activities, and memorable moments from life at RLT Shanthinikethan.
+      </p>
+    </div>
+
+    <!-- Gallery Grid -->
+
+    <div class="gallery-grid">
+      <div class="gallery-item large">
+        <img src="assets/gallery/gallery-1.jpg" alt="School Campus" />
+        <div class="gallery-overlay">
+          <h5>School Campus</h5>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/gallery/gallery-2.jpg" alt="Smart Classroom" />
+        <div class="gallery-overlay">
+          <h5>Smart Classrooms</h5>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/gallery/gallery-3.jpg" alt="Science Lab" />
+        <div class="gallery-overlay">
+          <h5>Science Lab</h5>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/gallery/gallery-4.jpg" alt="Sports Activities" />
+        <div class="gallery-overlay">
+          <h5>Sports Activities</h5>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/gallery/gallery-5.jpg" alt="Cultural Events" />
+        <div class="gallery-overlay">
+          <h5>Cultural Events</h5>
+        </div>
+      </div>
+
+      <div class="gallery-item large">
+        <img src="assets/gallery/gallery-6.jpg" alt="Student Activities" />
+        <div class="gallery-overlay">
+          <h5>Student Activities</h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+
+    <div class="text-center mt-5">
+      <a routerLink="/gallery" class="gallery-btn">
+        View Full Gallery
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="admission-cta">
+  <div class="container">
+    <div class="cta-wrapper">
+      <div class="cta-content">
+        <span class="cta-badge"> Admissions Open 2026-27 </span>
+
+        <h2>Begin Your Child's Journey Towards Excellence</h2>
+
+        <p>
+          Join RLT Shanthinikethan and provide your child with a future-ready education that
+          combines academic excellence, interactive learning, cloud-based technology, leadership
+          development, and holistic growth.
+        </p>
+
+        <div class="cta-buttons">
+          <a routerLink="/admission" class="btn btn-light btn-lg"> Apply For Admission </a>
+
+          <a routerLink="/contact-us" class="btn btn-outline-light btn-lg"> Schedule A Visit </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
