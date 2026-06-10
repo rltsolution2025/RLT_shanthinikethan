@@ -3,8 +3,8 @@
 ========================= */
 
 .announcement-bar {
-  background: linear-gradient(90deg, #ffffff, #e9e7e1);
-  color: #000;
+  background: linear-gradient(135deg, #03265c, #123257);
+  color: #ffffff;
   font-weight: 600;
   padding: 8px 0;
   font-size: 14px;
@@ -15,7 +15,8 @@
 ========================= */
 
 .main-header {
-  background: linear-gradient(135deg, #03265c, #123257);
+ 
+  background: linear-gradient(90deg, #ffffff, #faf8f0);
   padding: 18px 0;
 }
 
@@ -39,25 +40,23 @@
   width: 105px;
   height: 105px;
   object-fit: contain;
-  background: #fff;
-  border-radius: 50%;
 }
 
 .school-details h1 {
-  color: #fff;
+  color: #312f81;
   font-size: 34px;
   font-weight: 700;
   margin: 0;
 }
 
 .school-details p {
-  color: rgba(255, 255, 255, 0.95);
+  color: #312f81;
   margin: 0;
   font-size: 16px;
 }
 
 .school-details span {
-  color: rgba(255, 255, 255, 0.75);
+  color: #312f81;
   font-size: 13px;
 }
 
@@ -74,17 +73,17 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  background: rgba(255, 255, 255, 0.12);
+  background: #c3d6ffd2;
   padding: 12px 18px;
   border-radius: 12px;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px, );
 }
 
 .info-box i {
   width: 48px;
   height: 48px;
-  background: #fff;
-  color: #1565c0;
+  background: #312f81;
+  color: #f3f3f3;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -93,13 +92,13 @@
 }
 
 .info-box small {
-  color: rgba(255, 255, 255, 0.8);
+  color: #312f81;
   display: block;
 }
 
 .info-box h6 {
   margin: 0;
-  color: #fff;
+  color: #312f81;
   font-weight: 600;
 }
 
